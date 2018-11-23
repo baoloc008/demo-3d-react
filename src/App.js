@@ -25,7 +25,7 @@ class App extends Component {
       scene = new THREE.Scene();
       scene.background = new THREE.Color(0x333333);
       container = document.createElement('div');
-      document.getElementById('root').appendChild(container);
+      document.body.appendChild(container);
       camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 10000);
       camera.position.set(1000, 1000, 1000);
       camera.lookAt(0, 0, 0);
